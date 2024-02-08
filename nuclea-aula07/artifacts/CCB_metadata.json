@@ -1,0 +1,261 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "credor_",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "prazoAntigo",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "prazoNovo",
+						"type": "uint256"
+					}
+				],
+				"name": "NovoPrazoPagamento",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "oldOwner",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "OwnerSet",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "changeOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dataEmissao",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "prazoPagamento_",
+						"type": "uint256"
+					}
+				],
+				"name": "mudaDataPagamento",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "nomeEmissor",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "valorNominal",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "visitas",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"author": "Diovane Schumann",
+			"details": "Operacoes de uma nota comercial",
+			"events": {
+				"NovoPrazoPagamento(uint256,uint256)": {
+					"details": "Emitido quando um novo prazo de pagamento é definido"
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"changeOwner(address)": {
+					"details": "Change owner",
+					"params": {
+						"newOwner": "address of new owner"
+					}
+				},
+				"dataEmissao()": {
+					"details": "Retorna a data da emissao."
+				},
+				"getOwner()": {
+					"details": "Return owner address ",
+					"returns": {
+						"_0": "address of owner"
+					}
+				},
+				"mudaDataPagamento(uint256)": {
+					"details": "muda o prazo de pagamento",
+					"params": {
+						"prazoPagamento_": "novo prazo de pagamentos a ser adicionado. Em segundos"
+					}
+				},
+				"nomeEmissor()": {
+					"details": "Retorna o nome do Emissor."
+				},
+				"valorNominal()": {
+					"details": "Retorna o valor nominal."
+				}
+			},
+			"title": "NotaComercial",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"mudaDataPagamento(uint256)": {
+					"notice": "dependendo da situacao economica o prazo de pagamento pode mudar"
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"nuclea-aula07/ccb.sol": "CCB"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"nuclea-aula07/ccb.sol": {
+			"keccak256": "0xba89e8ce76b177dcc020c9ec1a39f2ceed5d680b5c0c8161ca93d71bf287ef8b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://18d8fa5b4c39810e674c479bb9e7c42bb70f40a5b0577439be6938a8b2330b17",
+				"dweb:/ipfs/QmRHiafVQZPSDTnyu3rPjPCroSVLiCQxHJDtXqoDw1Xqaz"
+			]
+		},
+		"nuclea-aula07/owner.sol": {
+			"keccak256": "0x972733055e6d5230657de596cfce5dba5b58bf06efb688cc3c2d7d35773ca4e8",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://2bb30db6fde76c1a377a3be271d63282f6fa231013a429c898bf22e1af9b6985",
+				"dweb:/ipfs/QmXjsy7zrfuKrK26HdyWPe2NCwQCakA8Ezbsyj4gob57GA"
+			]
+		},
+		"nuclea-aula07/titulo.sol": {
+			"keccak256": "0x403ed8fc7ef0c31643f136904bc0e01d22413d722fa7906ac09b087a73a38644",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0fabfc6477a15f99aa42d9ab9dbecd8347f17f34ab11286baf06520bb5d81c18",
+				"dweb:/ipfs/QmNQ9Mz1B1c2s9RB6jndZCHFrnrWyUoMa3UoTosNdURWAK"
+			]
+		}
+	},
+	"version": 1
+}
