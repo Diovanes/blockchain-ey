@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "token_",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "person_",
+						"type": "address"
+					}
+				],
+				"name": "obtemSaldo",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "person_",
+						"type": "address"
+					}
+				],
+				"name": "saldoMoeda",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"saldo.sol": "Saldo"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"ierc20.sol": {
+			"keccak256": "0x5dadbe8157269e5d46cf525ddf2beb431ce762b728c3d8b60fdc6fbf1da131e4",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://815caedfa63b4d0b3ced9b0d901682623debfdcb35a1da0c67d0d30b0c79d2ae",
+				"dweb:/ipfs/QmeGCfrKff3xjrikePgPmvMRLzHRDCMWKofCPfSMADr2b1"
+			]
+		},
+		"saldo.sol": {
+			"keccak256": "0x59df9f2a9be0e51f1db4abb5caa5ca7906eff9ac291bf244c2e99f3ea41c795c",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d0816834ce4c50275ef2810f2d5c36b09ae961d3f8fb03b5b9fed21e13d7f481",
+				"dweb:/ipfs/QmYD5sdtsev3zJYNrWLzC4kowyv2oEwDtvAqHfXZu11Nu4"
+			]
+		}
+	},
+	"version": 1
+}
